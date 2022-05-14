@@ -1,0 +1,43 @@
+<div class="bodycomponent">
+    <div class="title">{{ project.title_project }}</div>
+    <div class="project">
+        <div class="left">
+            <div class="arealogo">
+                <div class="logo">
+                    <img [src]="project.logo_project" alt="">
+                </div>
+            </div>
+            <div class="source">
+                <div class="subtitle">
+                    Sources
+                </div>
+                <div class="sources">
+                    <a target="_blank" [href]="x.value" class="so" *ngFor="let x of project.link_project | keyvalue">{{x.key}}</a>
+                </div>
+            </div>
+            <div class="tech">
+                <div class="subtitle">
+                    Technologies
+                </div>
+                <div class="technologies">
+                    <li class="tecnology"  *ngFor="let pro of technologies_proj">{{ pro.name }}</li>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <div class="subtitle">
+                Description
+            </div>
+            <div class="text" [innerHTML]="project.description_project">
+            </div>
+            <div class="subtitle">
+                Contents
+            </div>
+            <div class="contents">
+                <div class="think">
+                    <img src="https://media0.giphy.com/media/342Zsv5S4W8XC/200.gif" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

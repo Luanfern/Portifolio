@@ -1,0 +1,41 @@
+<div class="bodycomponent">
+    <div class="tp">
+        <div *ngIf="snackbar" class="messagesend">
+            {{ snackbartext }}
+        </div>
+    </div>
+    <div class="contents">
+        <form [formGroup]="contactme" class="forms" (ngSubmit)="onSubmit()">
+            <div class="title">
+                Contact Me
+            </div>
+            <div  class="inputtext">
+                <input type="text" placeholder="Name" name="name" formControlName="name">
+                <span class="errormessage" *ngIf="servicecontact.hasErrorValidate(fields.name, 'required')">Campo Obrigat&oacute;rio</span>
+            </div>
+            <div  class="inputtext">
+                <input type="email" placeholder="E-mail" name="email" formControlName="email">
+                <span class="errormessage" *ngIf="servicecontact.hasErrorValidate(fields.email, 'required')">Campo Obrigat&oacute;rio</span>
+                <span class="errormessage" *ngIf="servicecontact.hasErrorValidate(fields.email, 'email')">E-mail Inv&aacute;lido</span>
+            </div>
+            <div  class="inputtext">
+                <input type="text" placeholder="Subject" name="subject" formControlName="subject">
+            </div>
+            <div class="inputtext">
+                <textarea cols="30" rows="5" placeholder="Message" wrap="hard" name="message" formControlName="message"></textarea>
+                <span class="errormessage" *ngIf="servicecontact.hasErrorValidate(fields.message, 'required')">Campo Obrigat&oacute;rio</span>
+            </div>
+            <div class="sendoptions">
+                <button class="option" type="submit">
+                    Enviar por E-mail
+                </button>
+                <div class="or">
+                    ou
+                </div>
+                <a href="https://api.whatsapp.com/send?phone=5511982124517&text=Ola!" target="_blank" class="option wpp">
+                    Contato por Whatsapp
+                </a>
+            </div>
+        </form>
+    </div>
+</div>

@@ -1,0 +1,56 @@
+ .project{
+    float: left;
+    width: calc(50% - 20px);
+    overflow: hidden;
+    height: 280px;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px 0px rgba(0,0,0,0.30);
+    .backgroundproject{
+        .titleproject{
+            overflow: hidden;
+            line-height: 45px;
+            text-align: center;
+            font-family: 'Luxurious Roman', cursive;
+        }
+        .ilustration{
+            height: 235px;
+            border-radius:0 0 8px 8px ;
+            background-color: rgb(126, 126, 126);
+            box-shadow: 0 2px 4px 0 rgb(104, 104, 104);
+            display: flex;
+            justify-content: space-between;
+            .logo{
+                width: calc(100% - 80px);
+                height: 10px;
+                background-color: rgb(43, 43, 43);
+                border-radius:8px 8px 8px 8px;
+                height: 235px;
+                display: flex;
+                justify-content: center;
+                img{
+                    height: 235px;
+                    width: auto;
+                }
+            }
+            .seemore{
+                width: 80px;
+                height: 10px;
+                color: rgb(29, 29, 29);
+                border-radius:0 0px 8px 0;
+                overflow: hidden;
+                height: 235px;
+                font-family: 'Hind Siliguri', sans-serif;
+                line-height: 235px;
+                text-align: center;
+                background-color: rgb(126, 126, 126);
+            }
+        }
+    }
+ }
+
+ @media screen and (max-width: 950px){
+  .project{
+    width: calc(100% - 20px);
+  }
+ }
