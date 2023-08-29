@@ -10,13 +10,13 @@ import { ProjectsComponent } from './contents/projects/projects.component';
 import { ContactmeComponent } from './contents/contactme/contactme.component';
 import { SkillComponent } from './contents/micro_components/skill/skill.component';
 import { ProjectComponent } from './contents/micro_components/Projects/project/project.component';
-import { CertificatesComponent } from './contents/certificates/certificates.component';
 import { ProjectviewComponent } from './contents/projectview/projectview.component';
 import { ProjectService } from './contents/projects/project.service';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ContactmeService } from './contents/contactme/contactme.service';
 import { appService } from './app.service';
+import { ExperiencesComponent } from './contents/experiences/experiences.component';
 
 
 @NgModule({
@@ -29,8 +29,8 @@ import { appService } from './app.service';
     ContactmeComponent,
     SkillComponent,
     ProjectComponent,
-    CertificatesComponent,
     ProjectviewComponent,
+    ExperiencesComponent,
   ],
   imports: [
     HttpClientModule,
@@ -49,7 +49,7 @@ import { appService } from './app.service';
         path: 'contactme', component: ContactmeComponent
       },
       {
-        path: 'certificates', component: CertificatesComponent
+        path: 'experiences', component: ExperiencesComponent
       },
       {
         path: '', redirectTo: 'home', pathMatch: 'full'
