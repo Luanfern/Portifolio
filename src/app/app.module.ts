@@ -51,10 +51,41 @@ import { ExperiencesComponent } from './contents/experiences/experiences.compone
       {
         path: 'experiences', component: ExperiencesComponent
       },
-      {
-        path: '', redirectTo: 'home', pathMatch: 'full'
+      /* {
+        path: 'home', redirectTo: 'Portifolio/home', pathMatch: 'full'
       },
       {
+        path: 'projects', redirectTo: 'Portifolio/projects', pathMatch: 'full'
+      },
+      {
+        path: 'projects/:id', redirectTo: 'Portifolio/projects/:id', pathMatch: 'full'
+      },
+      {
+        path: 'contactme', redirectTo: 'Portifolio/contactme', pathMatch: 'full'
+      },
+      {
+        path: 'experiences', redirectTo: 'Portifolio/experiences', pathMatch: 'full'
+      },
+      //Deploy to GITHUB PAGES:
+      {
+        path: 'Portifolio/home', component: HomeComponent
+      },
+      {
+        path: 'Portifolio/projects', component: ProjectsComponent
+      },
+      {
+        path: 'Portifolio/projects/:id', component: ProjectviewComponent
+      },
+      {
+        path: 'Portifolio/contactme', component: ContactmeComponent
+      },
+      {
+        path: 'Portifolio/experiences', component: ExperiencesComponent
+      }, */
+      {
+        path: '', redirectTo: 'home', pathMatch: 'full'
+      },     
+       {
         path: '**', redirectTo: 'home', pathMatch: 'full'
       }
     ]),
