@@ -1,10 +1,11 @@
 [
-        {"name": "Flutter", "logo": "https://yt3.googleusercontent.com/ytc/AOPolaQ4-CWs1qmtt_r7jqGLE0j82QjRG9KltN0hRIRN=s900-c-k-c0x00ffffff-no-rj"},
-        {"name": "Typescript", "logo": "https://yt3.googleusercontent.com/ytc/AOPolaQ4-CWs1qmtt_r7jqGLE0j82QjRG9KltN0hRIRN=s900-c-k-c0x00ffffff-no-rj"},
-        {"name": "Angular", "logo": "https://yt3.googleusercontent.com/ytc/AOPolaQ4-CWs1qmtt_r7jqGLE0j82QjRG9KltN0hRIRN=s900-c-k-c0x00ffffff-no-rj"},
-        {"name": "PHP", "logo": "https://yt3.googleusercontent.com/ytc/AOPolaQ4-CWs1qmtt_r7jqGLE0j82QjRG9KltN0hRIRN=s900-c-k-c0x00ffffff-no-rj"},
-        {"name": "Node.js", "logo": "https://yt3.googleusercontent.com/ytc/AOPolaQ4-CWs1qmtt_r7jqGLE0j82QjRG9KltN0hRIRN=s900-c-k-c0x00ffffff-no-rj"},
-        {"name": "Python", "logo": "https://yt3.googleusercontent.com/ytc/AOPolaQ4-CWs1qmtt_r7jqGLE0j82QjRG9KltN0hRIRN=s900-c-k-c0x00ffffff-no-rj"},
-        {"name": "Banco de Dados Sql", "logo": "https://yt3.googleusercontent.com/ytc/AOPolaQ4-CWs1qmtt_r7jqGLE0j82QjRG9KltN0hRIRN=s900-c-k-c0x00ffffff-no-rj"},
-        {"name": "Banco de Dados NoSql", "logo": "https://yt3.googleusercontent.com/ytc/AOPolaQ4-CWs1qmtt_r7jqGLE0j82QjRG9KltN0hRIRN=s900-c-k-c0x00ffffff-no-rj"}
+        {"name": "Flutter","learning": false, "logo": "https://yt3.googleusercontent.com/ytc/AOPolaQ4-CWs1qmtt_r7jqGLE0j82QjRG9KltN0hRIRN=s900-c-k-c0x00ffffff-no-rj"},
+        {"name": "Typescript", "learning": false,"logo": "https://yt3.googleusercontent.com/ytc/AOPolaQ4-CWs1qmtt_r7jqGLE0j82QjRG9KltN0hRIRN=s900-c-k-c0x00ffffff-no-rj"},
+        {"name": "Angular", "learning": false,"logo": "https://yt3.googleusercontent.com/ytc/AOPolaQ4-CWs1qmtt_r7jqGLE0j82QjRG9KltN0hRIRN=s900-c-k-c0x00ffffff-no-rj"},
+        {"name": "PHP", "learning": false,"logo": "https://yt3.googleusercontent.com/ytc/AOPolaQ4-CWs1qmtt_r7jqGLE0j82QjRG9KltN0hRIRN=s900-c-k-c0x00ffffff-no-rj"},
+        {"name": "Node.js","learning": false, "logo": "https://yt3.googleusercontent.com/ytc/AOPolaQ4-CWs1qmtt_r7jqGLE0j82QjRG9KltN0hRIRN=s900-c-k-c0x00ffffff-no-rj"},
+        {"name": "Python","learning": false, "logo": "https://yt3.googleusercontent.com/ytc/AOPolaQ4-CWs1qmtt_r7jqGLE0j82QjRG9KltN0hRIRN=s900-c-k-c0x00ffffff-no-rj"},
+        {"name": "Banco de Dados Sql","learning": false, "logo": "https://yt3.googleusercontent.com/ytc/AOPolaQ4-CWs1qmtt_r7jqGLE0j82QjRG9KltN0hRIRN=s900-c-k-c0x00ffffff-no-rj"},
+        {"name": "Banco de Dados NoSql","learning": false, "logo": "https://yt3.googleusercontent.com/ytc/AOPolaQ4-CWs1qmtt_r7jqGLE0j82QjRG9KltN0hRIRN=s900-c-k-c0x00ffffff-no-rj"},
+        {"name": "Kotlin", "learning": true, "logo": "https://seeklogo.com/images/K/kotlin-logo-6A9E0484CA-seeklogo.com.png"}
     ]

@@ -13,12 +13,17 @@ export class SkillComponent implements OnChanges, OnInit {
   @Input()
   skilllogo: string = '';
 
+  @Input()
+  skilllearning: boolean = false;
+
   logo: string = '';
   name: string = '';
+  learning: boolean = false;
 
   ngOnChanges(): void {
     this.name = this.skillname;
     this.logo = this.skilllogo;
+    this.learning = this.skilllearning;
   }
 
   ngOnInit(): void {

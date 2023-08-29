@@ -4,24 +4,43 @@
     border: 1px solid rgb(161, 161, 161);
     margin: 4px 4px ;
     overflow: hidden;
-    display: flex;
-    .imageSkill{
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        height: 50px;
-        width: auto;
-    }
-    .vertDivider{
-        width: 0.5px;
-        background-color: rgb(161, 161, 161);
-        height: 50px;
-    }
-    .nameSkill{
+    .learning{
+        position: relative;
+        background-color: rgba(184, 184, 184, 0.432);
         width: 100%;
-        text-align: start;
-        line-height: 50px;
-        padding: 0 8px 0 8px;
-        text-overflow: ellipsis;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        .txt{
+            width: 100%;
+            background-color: white;
+            text-align: center;
+        }
+        transition: 0.2s;
+        &:hover{
+            display: none;
+        }
+    }
+    .bodyski{
+        display: flex;
+        .imageSkill{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            height: 50px;
+            width: auto;
+        }
+        .vertDivider{
+            width: 0.5px;
+            background-color: rgb(161, 161, 161);
+            height: 50px;
+        }
+        .nameSkill{
+            width: 100%;
+            text-align: start;
+            line-height: 50px;
+            padding: 0 8px 0 8px;
+            text-overflow: ellipsis;
+        }
     }
 }
