@@ -11,14 +11,14 @@ export class SkillComponent implements OnChanges, OnInit {
   skillname: string = '';
 
   @Input()
-  skillpercent: number = 0;
+  skilllogo: string = '';
 
-  percent: number = 0;
+  logo: string = '';
   name: string = '';
 
   ngOnChanges(): void {
     this.name = this.skillname;
-    this.percent = this.skillpercent;
+    this.logo = this.skilllogo;
   }
 
   ngOnInit(): void {

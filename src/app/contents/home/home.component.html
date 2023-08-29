@@ -21,27 +21,11 @@
                             </div>
                         </div>
                     </a>
-                    <a href="https://www.linkedin.com/in/luan-fernandes-a63ba2206/" target="_blank">
+                    <a href="https://www.linkedin.com/in/luan-afernandes/" target="_blank">
                         <div class="socialMidias">
                             <img class="midiasImages" src="https://t.ctcdn.com.br/o6YUYZNxhn1ob0FEjQo-a7KapYU=/400x400/smart/i490027.jpeg" alt="Linkedin">
                             <div>
                                 My Linkedin
-                            </div>
-                        </div>
-                    </a>
-                    <a href="https://www.tinkercad.com/users/5z7pJeEltKa-luan07" target="_blank">
-                        <div class="socialMidias">
-                            <img class="midiasImages" src="https://www.3d-print.com/images/logos/tinkercad-logo.png" alt="Tinkercad">
-                            <div>
-                                My Tinkercad
-                            </div>
-                        </div>
-                    </a>
-                    <a href="https://web.dio.me/users/luanfern2004" target="_blank">
-                        <div class="socialMidias">
-                            <img class="midiasImages" src="https://blob.sololearn.com/avatars/sololearn.png" alt="Sololearn">
-                            <div>
-                                My Sololearn
                             </div>
                         </div>
                     </a>
@@ -66,7 +50,7 @@
                         <div class="answer"><span >High school: </span> Etec da Zona Leste - Ensino m&eacute;dio integrado ao t&eacute;cnico de Desenvolvimento de Sistema</div>
                     </div>
                     <div class="info">
-                        <div class="answer"><span >College: </span> UNIP - Sistema da informa&ccedil;&atilde;o, December - 2025</div>
+                        <div class="answer"><span >College: </span> UFABC - Ciência da Computação, December - 2028</div>
                     </div>
                 </div>
                 <div class="additionalinfos">
@@ -84,18 +68,16 @@
                 <div class="titleArea">
                     Professional Summary
                 </div>
-                <div class="texts">
-                    <p>Estudante de Ensino Superior, curso Sistema da informa&ccedil;&atilde;o na UNIP Tatuap&eacute;.</p>
-                    <p>N&atilde;o tenho experi&ecirc;ncia em atuar diretamente na &aacute;rea da programa&ccedil;&atilde;o mas sempre procuro aprender novas habilidades, assumir mais responsabilidades e crescer profissionalmente.</p>
-                    <p>Tenho experi&ecirc;ncia pr&aacute;tica em edi&ccedil;&atilde;o de fotos e cadastro de produtos para algumas empresas de m&oacute;veis planejados e objetos/instrumentos de cozinha.</p>
-
-                </div>
+                <div class="texts" [innerHTML]="summary"></div>
                 <div class="subtitle">
                     Hard Skills
                 </div>
-                <div class="hardskills">
-                    <app-skill *ngFor = 'let skill of skills' [skillname]='skill.name' [skillpercent]='skill.percent'></app-skill>
+                <div class="hardskills" *ngIf="skills.length; else loadingSkills">
+                    <app-skill *ngFor = 'let skill of skills' [skillname]='skill.name' [skilllogo]='skill.logo'></app-skill>
                 </div>
+                <ng-template #loadingSkills>
+                    <h3>Loading...</h3>
+                </ng-template>
             </div>
         </div>
     </div>

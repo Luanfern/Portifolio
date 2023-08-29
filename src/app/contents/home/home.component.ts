@@ -13,6 +13,8 @@ export class HomeComponent implements OnInit {
   
   skills: Skill[] = [];
 
+  summary: string = '';
+
   idade: number = idade(2004, 5, 4);
 
   constructor(private title: Title, private homeservice: HomeService) { }
@@ -20,12 +22,18 @@ export class HomeComponent implements OnInit {
   ngOnInit(): void {
     this.title.setTitle('Home - Portifolio');
     this.getskills();
+    this.getsummary();
   }
 
   getskills(): void{
     this.homeservice.getskills().subscribe((skills) => {
-      console.log(skills);
       this.skills = skills;
+    });
+  }
+
+  getsummary(): void{
+    this.homeservice.getsummary().subscribe((summary) => {
+      this.summary = summary.summary;
     });
   }
 

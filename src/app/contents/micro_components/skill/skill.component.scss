@@ -1,23 +1,27 @@
 .skill{
-    width: 100%;
-    margin: 8px 0;
-    span{
-        margin-left: 10px;
-    }
-    .skillgraf{
-        border: 3px solid black;
+    height: 50px;
+    border-radius: 5px;
+    border: 1px solid rgb(161, 161, 161);
+    margin: 4px 4px ;
+    overflow: hidden;
+    display: flex;
+    .imageSkill{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
         height: 50px;
-        padding: 2px;
-        .skillprogress{
-            height: 40px;
-            text-align: right;
-            padding-right: 10px;
-            background-color: rgb(160, 0, 0);
-            span{
-                height: 40px;
-                line-height: 40px;
-                color: #fff;
-            }
-        }
+        width: auto;
+    }
+    .vertDivider{
+        width: 0.5px;
+        background-color: rgb(161, 161, 161);
+        height: 50px;
+    }
+    .nameSkill{
+        width: 100%;
+        text-align: start;
+        line-height: 50px;
+        padding: 0 8px 0 8px;
+        text-overflow: ellipsis;
     }
 }
