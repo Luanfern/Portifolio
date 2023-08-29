@@ -12,6 +12,7 @@ export class HomeComponent implements OnInit {
 
   
   skills: Skill[] = [];
+  learningskills: Skill[] = [];
 
   summary: string = '';
 
@@ -27,7 +28,13 @@ export class HomeComponent implements OnInit {
 
   getskills(): void{
     this.homeservice.getskills().subscribe((skills) => {
-      this.skills = skills;
+      skills.forEach((a) => {
+        if (a.learning == true) {
+          this.learningskills.push(a)
+        }else{
+          this.skills.push(a)
+        }
+      })
     });
   }
 

@@ -75,6 +75,13 @@
                 <div class="hardskills" *ngIf="skills.length; else loadingSkills">
                     <app-skill *ngFor = 'let skill of skills' [skillname]='skill.name' [skilllogo]='skill.logo' [skilllearning]='skill.learning'></app-skill>
                 </div>
+                <br>
+                <div class="subtitle">
+                    Learning - Hard Skills
+                </div>
+                <div class="hardskills" *ngIf="learningskills.length; else loadingSkills">
+                    <app-skill *ngFor = 'let skill of learningskills' [skillname]='skill.name' [skilllogo]='skill.logo' [skilllearning]='skill.learning'></app-skill>
+                </div>
                 <ng-template #loadingSkills>
                     <h3>Loading...</h3>
                 </ng-template>
