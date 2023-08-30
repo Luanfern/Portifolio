@@ -1,13 +1,36 @@
 <div class="project">
-  <div class="backgroundproject">
-    <div class="ilustration">
-      <div class="logo">
-        <img [src]="image" alt="">
+  <div class="headerP">
+    <img [src]="logo" alt="" class="logo">
+    <div class="titlePublisher">
+      <span class="title">{{ title }}</span>
+      <span class="author">Luan A. Fernandes</span>
+    </div>
+  </div>
+  <div class="bodyproject">
+    <div class="imagesArea">
+      <div class="imageshowview">
+        <img [src]="images[actualImage]" alt="" (click)="showImage(images[actualImage])">
       </div>
-      <div (click)="seemore(id)" class="seemore">
-        See More
+      <div class="imagesNavigator">
+        <button class="arrowButton" (click)="backImage()">
+          <img class="arrows arrowback" src="https://www.svgrepo.com/download/932/left-arrow.svg" alt="">
+          <span>Back</span>
+        </button>
+        <span class="warningmessage">Click image to show!</span>
+        <button class="arrowButton" (click)="nextImage()">
+          <span>Next</span>
+          <img class="arrows arrownext" src="https://www.svgrepo.com/download/932/left-arrow.svg" alt="">
+        </button>
       </div>
     </div>
-    <div class="titleproject" [innerHTML]="title"></div>
+    <div class="textinfos">
+      <div class="desc" [innerHTML]="description"></div>
+      <a [href]="link"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="acessar">
+        <div>Acessar projeto</div>
+      </a>
+    </div>
   </div>
 </div>

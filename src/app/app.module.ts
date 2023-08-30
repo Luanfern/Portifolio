@@ -10,7 +10,6 @@ import { ProjectsComponent } from './contents/projects/projects.component';
 import { ContactmeComponent } from './contents/contactme/contactme.component';
 import { SkillComponent } from './contents/micro_components/skill/skill.component';
 import { ProjectComponent } from './contents/micro_components/Projects/project/project.component';
-import { ProjectviewComponent } from './contents/projectview/projectview.component';
 import { ProjectService } from './contents/projects/project.service';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
@@ -29,7 +28,6 @@ import { ExperiencesComponent } from './contents/experiences/experiences.compone
     ContactmeComponent,
     SkillComponent,
     ProjectComponent,
-    ProjectviewComponent,
     ExperiencesComponent,
   ],
   imports: [
@@ -41,9 +39,6 @@ import { ExperiencesComponent } from './contents/experiences/experiences.compone
       },
       {
         path: 'projects', component: ProjectsComponent
-      },
-      {
-        path: 'projects/:id', component: ProjectviewComponent
       },
       {
         path: 'contactme', component: ContactmeComponent

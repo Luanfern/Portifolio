@@ -1,17 +1,20 @@
 <div class="bodycomponent">
   <div class="projects">
-    <div class="topics">
-      <div class="title">Technologies</div>
-      <div class="topicslist">
-        <li class="tecnology" *ngFor="let tec of tecnologies" (click)="tecnologychoose(tec.id_techs)">{{ tec.name }}</li>
-      </div>
-    </div>
     <div class="projectsarea">
       <div class="title">Projects</div>
       <div class="projectsuniques">
-        <app-project *ngFor="let project of showprojects" [titleproject]="project.title_project" [imageproject]="project.logo_project" [idproject]="project.id_project">
+        <app-project *ngFor="let project of projects"
+        [titleproject]="project.title"
+        [imagesproject]="project.images"
+        [descriptionproject]="project.description"
+        [linkproject]="project.link"
+        [logoproject]="project.logo"
+        [showImage]="showImage">
         </app-project>
       </div>
     </div>
   </div>
+</div>
+<div class="showImageBig" (click)="showImage('123')" [style.display]="showBigImage ? 'block' : 'none'">
+  <img [src]="bigI">
 </div>

@@ -1,34 +1,9 @@
 .projects{
     display: flex;
-    flex-wrap: wrap;
-    .topics{
-        padding: 0 10px;
-        width: 20%;
-        border-left: 1px solid rgba(185, 185, 185, 0.342);
-        border-right: 1px solid rgba(185, 185, 185, 0.342);
-        font-size: 20px;
-            .tecnology{
-                width: calc(100% - 20px);
-                height: 35px;
-                line-height: 35px;
-                margin-top: 3px;
-                margin-left: 20px;
-                padding-left: 15px;
-                font-size: 18px;
-                font-family: 'Hind Siliguri', sans-serif;
-                text-decoration: none;
-                list-style: none;
-                background-color: rgba(0, 0, 0, 0.034);
-                border-radius: 7px;
-                &:hover{
-                    background-color: rgba(0, 0, 0, 0.055);
-                    font-size: 19px;
-                }
-        }
-    }
+    flex-direction: column;
     .projectsarea{
         padding: 0 10px;
-        width: 80%;
+        width: 100%;
         .title{
             font-size: 20px;
         }
@@ -38,24 +13,16 @@
     }
 }
 
+.showImageBig{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    background-color: rgba(78, 78, 78, 0.521);
+ }
+
 @media screen and (max-width: 768px) {
     .projects{
-        .topics{
-            width: 100%;
-            .topicslist{
-                width: 100%;
-                height: 45px;
-                overflow: scroll;
-                white-space: nowrap;
-                .tecnology{
-                    width: auto;
-                    height: 35px;
-                    display: inline-block;
-                    margin-left: 10px;
-                    padding-right: 15px;
-                }
-            }
-        }
         .projectsarea{
             width: 100%;
         }
