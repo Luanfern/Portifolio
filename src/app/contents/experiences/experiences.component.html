@@ -1,1 +1,10 @@
-<p>experiences works!</p>
+<div class="bodycomponent">
+    <div class="experiences">
+      <div class="experiencesarea">
+        <div class="title">Experiences</div>
+        <div class="experiencesuniques">
+            <app-experience *ngFor="let experience of experiences" [experience]="experience"></app-experience>
+        </div>
+      </div>
+    </div>
+  </div>

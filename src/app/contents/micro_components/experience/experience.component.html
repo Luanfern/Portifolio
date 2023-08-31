@@ -1,0 +1,22 @@
+<div class="exp">
+    <div class="left">
+        <img [src]="experience.logo" alt="" class="logo">
+    </div>
+    <div class="right">
+        <div class="headerE">
+            <div class="infosH">
+              <span class="title">{{ experience.employerPosition }}</span>
+              <span class="name">{{experience.name}} · {{experience.position}}</span>
+              <span class="date">{{experience.start | date}} - {{experience.end | date}} · {{ duration }}</span>
+              <span class="locale">{{experience.local}} · {{experience.modeWork}}</span>
+            </div>
+          </div>
+          <div class="bodyexp">
+            <div class="textinfos">
+              <div class="desc" [innerHTML]="experience.description"></div>
+              <div class="skills" [innerHTML]="experience.skills"></div>
+              
+            </div>
+          </div>
+    </div>
+  </div>

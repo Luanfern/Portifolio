@@ -16,6 +16,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ContactmeService } from './contents/contactme/contactme.service';
 import { appService } from './app.service';
 import { ExperiencesComponent } from './contents/experiences/experiences.component';
+import { ExperienceComponent } from './contents/micro_components/experience/experience.component';
 
 
 @NgModule({
@@ -29,6 +30,7 @@ import { ExperiencesComponent } from './contents/experiences/experiences.compone
     SkillComponent,
     ProjectComponent,
     ExperiencesComponent,
+    ExperienceComponent,
   ],
   imports: [
     HttpClientModule,
