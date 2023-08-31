@@ -9,8 +9,9 @@ import { ProjectService } from './project.service';
   styleUrls: ['./projects.component.scss']
 })
 export class ProjectsComponent implements OnInit {
+  showOverlay = false;
+  
   projects: Project[] = [];
-  showBigImage: boolean = true;
   bigI: string = '';
 
   constructor(private title: Title, private serviceprojects: ProjectService) { }
@@ -22,15 +23,17 @@ export class ProjectsComponent implements OnInit {
 
   getprojects(): void{
     this.serviceprojects.getprojects().subscribe((projects) => {
-      console.log(projects);
       this.projects = projects;
     });
   }
 
   showImage(image: string): void{
-    this.showBigImage = !this.showBigImage
+    if (image == '') {
+      this.showOverlay = false  
+    } else {
+      this.showOverlay = true
+    }
     this.bigI = image
-    alert(this.showBigImage)
   }
 
 

@@ -9,12 +9,15 @@
         [descriptionproject]="project.description"
         [linkproject]="project.link"
         [logoproject]="project.logo"
-        [showImage]="showImage">
+        (showOverlayImage)="showImage($event)">
         </app-project>
       </div>
     </div>
   </div>
 </div>
-<div class="showImageBig" (click)="showImage('123')" [style.display]="showBigImage ? 'block' : 'none'">
+<div class="showImageBig"
+    (click)="showImage('')" 
+    [style.display]="showOverlay ? 'flex' : 'none'"
+    >
   <img [src]="bigI">
 </div>

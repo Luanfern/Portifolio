@@ -1,5 +1,6 @@
 import { Component, Input, OnChanges, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-project',
@@ -10,8 +11,7 @@ export class ProjectComponent implements OnInit, OnChanges {
 
   constructor(private router: Router) { }
 
-  @Input()
-  showImage!: (image: string) => void;
+  @Output() showOverlayImage = new EventEmitter<string>();
 
   @Input()
   titleproject: string = '';
@@ -65,5 +65,9 @@ export class ProjectComponent implements OnInit, OnChanges {
     } else {
       this.actualImage--;
     }
+  }
+
+  clickshowOverlayImage(image: string){
+    this.showOverlayImage.emit(image)
   }
 }
