@@ -24,16 +24,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    
     img{
-        width: 92% !important;
-        max-width: none !important;
-        height: auto !important;
-        max-height: 100%;
+        height: 92% !important;
+        max-height: none !important;
+        width: auto !important;
+        max-width: 100%;
         object-fit: cover;
-
-   
     }
+    
  }
  
 @media screen and (max-width: 791px) {
@@ -41,5 +39,15 @@
         .projectsarea{
             width: 100%;
         }
-    }     
+    }
+    
+    .showImageBig{
+        img{
+            width: 92% !important;
+            max-width: none !important;
+            height: auto !important;
+            max-height: 100%;
+            object-fit: cover;
+        }
+    }
 }
