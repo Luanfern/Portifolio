@@ -13,6 +13,6 @@ export class ProjectService{
     ) { }
 
     getprojects(): Observable<Project[]>{
-        return this.http.get<Project[]>("/assets/infos/projects.json",{ headers: { 'Content-Type': 'application/json' } });
+        return this.http.get<Project[]>("https://luanfern.github.io/Luanfern/projects.json",{ headers: { 'Content-Type': 'application/json' } });
     }
 }
