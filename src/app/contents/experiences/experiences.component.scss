@@ -1,0 +1,22 @@
+.experiences{
+    display: flex;
+    flex-direction: column;
+    .experiencesarea{
+        padding: 0 10px;
+        width: 100%;
+        .title{
+            font-size: 20px;
+        }
+        .experiencesuniques{
+            overflow: hidden;
+        }
+    }
+}
+
+@media screen and (max-width: 791px) {
+    .experiences{
+        .experiencesarea{
+            width: 100%;
+        }
+    }     
+}

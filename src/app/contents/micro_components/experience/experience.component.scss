@@ -1,0 +1,111 @@
+.exp{
+    float: left;
+    width: 100%;
+    overflow: hidden;
+    margin: 5px 10px 10px 10px;
+    display: flex;
+    justify-content: space-around;
+    .left{
+        width: 70px;
+        .logo{
+            width: 50px;
+            height: 50px;
+        }
+    }
+    .right{
+        .headerE{
+            height: 75px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            border-bottom: 1px solid rgb(235, 233, 233);
+            margin-bottom: 5px;
+            .infosH{
+                margin-left: 10px;
+                display: flex;
+                flex-direction: column;
+                .title{
+                    font-size: 16.5px;
+                }
+                .name{
+                    font-size: 13px;
+                    color: rgb(92, 92, 92);
+                }
+                .date{
+                    font-size: 13px;
+                    color: rgb(92, 92, 92);
+                }
+                .locale{
+                    font-size: 13px;
+                    color: rgb(92, 92, 92);
+                }
+            }
+            
+        }
+        .bodyexp{
+            display: flex;
+            .textinfos{
+                padding-left: 12px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: start;
+                .desc{
+                    margin-top: 5px;
+                    font-size: 14.5px;
+                    margin-bottom: 10px;
+                    border-bottom: 1px solid rgb(235, 233, 233);
+                }
+                .skillsarea{
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-items: start;
+                    line-height: 20px;
+                    .skills{
+                        padding: 2px 6px;
+                        margin: 2px;
+                        border-radius: 3px;
+                        border: 1px solid rgb(223, 220, 220);
+                        font-size: 14.5px;
+                        color: rgb(58, 57, 57);
+                        transition: 0.3s;
+                        &:hover{
+                            padding: 3px 8px;
+                            background-color: rgb(180, 180, 180);
+                            margin: 4px;
+                            border-radius: 3px;
+                            border: 1px solid rgb(255, 255, 255);
+                            font-size: 14.5px;
+                            color: rgb(0, 0, 0);
+                        }
+                    }
+                }
+            }
+        }
+    }
+ }
+
+ @media screen and (max-width: 791px) {
+    .exp{
+        float: left;
+        width: 100%;
+        overflow: hidden;
+        margin: 5px 0 10px 0;
+    }
+    .bodyexp{
+        margin-bottom: 10px;
+        display: flex;
+        flex-direction: column-reverse;
+        .textinfos{
+            margin-bottom: 10px;
+            align-items: center;
+            padding-left: 0 !important;
+            .desc{
+                margin-bottom: 5px !important;
+            }
+            .skills{
+                margin-top: 5px !important;
+            }
+        }
+    }
+ }

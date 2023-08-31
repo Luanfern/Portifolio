@@ -1,56 +1,163 @@
  .project{
     float: left;
-    width: calc(50% - 20px);
+    width: 100%;
     overflow: hidden;
-    height: 280px;
-    margin: 10px;
-    border-radius: 8px;
-    box-shadow: 0px 4px 6px 0px rgba(0,0,0,0.30);
-    .backgroundproject{
-        .titleproject{
-            overflow: hidden;
-            line-height: 45px;
-            text-align: center;
-            font-family: 'Luxurious Roman', cursive;
+    margin: 5px 10px 10px 10px;
+    .headerP{
+        height: 60px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        border-bottom: 1px solid rgb(235, 233, 233);
+        margin-bottom: 5px;
+        .logo{
+            width: 40px;
+            height: 40px;
+            border-radius: 20px;
+            border: 1px solid black;
         }
-        .ilustration{
-            height: 235px;
-            border-radius:0 0 8px 8px ;
-            background-color: rgb(126, 126, 126);
-            box-shadow: 0 2px 4px 0 rgb(104, 104, 104);
+        .titlePublisher{
+            margin-left: 10px;
             display: flex;
-            justify-content: space-between;
-            .logo{
-                width: calc(100% - 80px);
-                height: 10px;
-                background-color: rgb(43, 43, 43);
-                border-radius:8px 8px 8px 8px;
-                height: 235px;
+            flex-direction: column;
+            .title{
+                
+            }
+            .author{
+                font-size: 12px;
+                color: rgb(92, 92, 92);
+            }
+        }
+        
+    }
+    .bodyproject{
+        display: flex;
+        .imagesArea{
+            overflow: hidden;
+            width: 45%;
+            object-fit: cover;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .imageshowview{
+                border: 0.3px solid rgb(223, 223, 223);
+                background-color: rgb(231, 230, 230);
+                height: 380px;
                 display: flex;
+                align-items: center;
                 justify-content: center;
                 img{
-                    height: 235px;
-                    width: auto;
+                    width: 100%;
+                    max-width: 380px;
+                    height: auto;
                 }
             }
-            .seemore{
-                width: 80px;
-                height: 10px;
-                color: rgb(29, 29, 29);
-                border-radius:0 0px 8px 0;
-                overflow: hidden;
-                height: 235px;
-                font-family: 'Hind Siliguri', sans-serif;
-                line-height: 235px;
-                text-align: center;
-                background-color: rgb(126, 126, 126);
+            .imagesNavigator{
+                margin-top: 5px;
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 0 15px;
+                .arrowButton{
+                    width: 85px;
+                    height: 40px;
+                    border-radius: 5px;
+                    background-color: white;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-evenly;
+                    border: 1px solid black;
+                }
+                .arrows{
+                    width: 25px;
+                    height: auto;
+                }
+                .arrownext{
+                    transform: rotate(180deg);
+                }
+            }
+        }
+        .textinfos{
+            padding-left: 12px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            .desc{
+                margin-bottom: 10px;
+            }
+            .acessar{
+                margin-top: 10px;
+                text-decoration: none;
+                div{
+                    transition: 0.2s;
+                    width: 120px;
+                    height: 40px;
+                    background-color: black;
+                    color: white;
+                    text-align: center;
+                    line-height: 40px;
+                    border-radius: 20px;
+                    &:hover{
+                    
+                        width: 125px;
+                        height: 44px;
+                        line-height: 44px;
+                        border-radius: 18px;
+                        font-size: 18px;
+                    
+                }
+                }
             }
         }
     }
  }
 
- @media screen and (max-width: 950px){
-  .project{
-    width: calc(100% - 20px);
-  }
+ @media screen and (max-width: 791px) {
+    .project{
+        float: left;
+        width: 100%;
+        overflow: hidden;
+        margin: 5px 0 10px 0;
+    }
+    .bodyproject{
+        margin-bottom: 10px;
+        display: flex;
+        flex-direction: column-reverse;
+        .imagesArea{
+            width: 100% !important; 
+            object-fit: cover;
+            display: flex;
+            justify-content: center;
+            .imageshowview{
+                width: 95%;
+                img{
+                    width: 100% !important;
+                    max-width: none !important;
+                    height: auto !important;
+                    max-height: 100%;
+                    object-fit: cover;
+                }
+            }
+            .imagesNavigator{
+                .arrowButton{
+                    width: 100px !important;
+                    font-size: 16px;
+                }
+            }
+        }
+        .textinfos{
+            margin-bottom: 10px;
+            align-items: center;
+            padding-left: 0 !important;
+            .desc{
+                margin-bottom: 5px !important;
+            }
+            .acessar{
+                margin-top: 5px !important;
+            }
+        }
+    }
  }

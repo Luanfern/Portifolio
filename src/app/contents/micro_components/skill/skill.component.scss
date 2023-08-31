@@ -11,8 +11,7 @@
             margin-left: auto;
             margin-right: auto;
             height: 50px;
-            min-width: 50px;
-            max-width: 70px;
+            width: 50px;
             object-fit: cover;
 
         }
@@ -22,7 +21,7 @@
             height: 50px;
         }
         .nameSkill{
-            width: 100%;
+            //width: 100%;
             text-align: start;
             line-height: 50px;
             padding: 0 8px 0 8px;

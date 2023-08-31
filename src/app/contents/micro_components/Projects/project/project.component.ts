@@ -1,5 +1,6 @@
 import { Component, Input, OnChanges, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-project',
@@ -10,51 +11,63 @@ export class ProjectComponent implements OnInit, OnChanges {
 
   constructor(private router: Router) { }
 
-  @Input()
-  idproject: number = 0;
+  @Output() showOverlayImage = new EventEmitter<string>();
 
   @Input()
   titleproject: string = '';
 
   @Input()
-  imageproject: string = '';
+  imagesproject: string[] = [];
 
   @Input()
   descriptionproject: string = '';
 
   @Input()
-  technologiesproject: number[] = [];
+  linkproject: string = '';
 
   @Input()
-  linkproject: string[] = [];
+  logoproject: string = '';
 
-  @Input()
-  typelinkproject: string[] = [];
-
-  id: number = 0;
   title: string = '';
-  image: string = '';
+  images: string[] = [];
   description: string = '';
-  technologies: number[] = [];
-  link: string[] = [];
-  typelink: string[] = [];
+  link: string = '';
+  logo: string = '';
+
+  actualImage: number = 0;
 
 
   ngOnChanges(): void {
-    this.id = this.idproject;
     this.title = this.titleproject;
-    this.image = this.imageproject;
+    this.images = this.imagesproject;
     this.description = this.descriptionproject;
-    this.technologies = this.technologiesproject;
     this.link = this.linkproject;
-    this.typelink = this.typelinkproject;
+    this.logo = this.logoproject;
+    this.actualImage = 0;
   }
 
   ngOnInit(): void {
   }
 
-  seemore(id: number): void {
-    this.router.navigate(['projects/'+id]);
+  nextImage(): void{
+    let fi = this.actualImage + 1;
+    if (fi >= this.images.length) {
+      this.actualImage = 0;  
+    } else {
+      this.actualImage++;
+    }
   }
 
+  backImage(): void{
+    let fi = this.actualImage - 1;
+    if (fi < 0) {
+      this.actualImage = this.images.length-1;  
+    } else {
+      this.actualImage--;
+    }
+  }
+
+  clickshowOverlayImage(image: string){
+    this.showOverlayImage.emit(image)
+  }
 }
