@@ -14,7 +14,10 @@
           <div class="bodyexp">
             <div class="textinfos">
               <div class="desc" [innerHTML]="experience.description"></div>
-              <div class="skills" [innerHTML]="experience.skills"></div>
+              <span>Skills: </span>
+              <div class="skillsarea">
+                <div class="skills" *ngFor="let sk of experience.skills" [innerHTML]="sk"></div>
+              </div>
               
             </div>
           </div>
