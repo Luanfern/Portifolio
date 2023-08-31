@@ -80,6 +80,7 @@
             }
         }
         .textinfos{
+            width: calc(55% - 12px);
             padding-left: 12px;
             display: flex;
             flex-direction: column;
@@ -149,6 +150,7 @@
             }
         }
         .textinfos{
+            width: 100% !important;
             margin-bottom: 10px;
             align-items: center;
             padding-left: 0 !important;
