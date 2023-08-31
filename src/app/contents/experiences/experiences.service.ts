@@ -13,6 +13,6 @@ export class ExperiencesService {
   ) { }
 
   getexperiences(): Observable<Experience[]>{
-      return this.http.get<Experience[]>("/assets/infos/experiences.json",{ headers: { 'Content-Type': 'application/json' } });
+      return this.http.get<Experience[]>("https://luanfern.github.io/Luanfern/experiences.json",{ headers: { 'Content-Type': 'application/json' } });
   }
 }
