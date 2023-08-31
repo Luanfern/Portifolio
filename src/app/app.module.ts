@@ -7,13 +7,11 @@ import { FooterComponent } from './views/footer/footer.component';
 import { HomeComponent } from './contents/home/home.component';
 import { RouterModule } from '@angular/router';
 import { ProjectsComponent } from './contents/projects/projects.component';
-import { ContactmeComponent } from './contents/contactme/contactme.component';
 import { SkillComponent } from './contents/micro_components/skill/skill.component';
 import { ProjectComponent } from './contents/micro_components/Projects/project/project.component';
 import { ProjectService } from './contents/projects/project.service';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { ContactmeService } from './contents/contactme/contactme.service';
 import { appService } from './app.service';
 import { ExperiencesComponent } from './contents/experiences/experiences.component';
 import { ExperienceComponent } from './contents/micro_components/experience/experience.component';
@@ -26,7 +24,6 @@ import { ExperienceComponent } from './contents/micro_components/experience/expe
     FooterComponent,
     HomeComponent,
     ProjectsComponent,
-    ContactmeComponent,
     SkillComponent,
     ProjectComponent,
     ExperiencesComponent,
@@ -43,9 +40,6 @@ import { ExperienceComponent } from './contents/micro_components/experience/expe
         path: 'projects', component: ProjectsComponent
       },
       {
-        path: 'contactme', component: ContactmeComponent
-      },
-      {
         path: 'experiences', component: ExperiencesComponent
       },
       {
@@ -60,7 +54,6 @@ import { ExperienceComponent } from './contents/micro_components/experience/expe
   ],
   providers: [
     ProjectService,
-    ContactmeService,
     appService
   ],
   bootstrap: [AppComponent]
