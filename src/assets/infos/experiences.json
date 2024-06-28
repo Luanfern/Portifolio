@@ -1,8 +1,8 @@
 [
     {
-        "logo": "https://media.licdn.com/dms/image/C4D0BAQFDe1TLXZG7Hw/company-logo_100_100/0/1676548091724?e=1701302400&v=beta&t=CaWIXsXFvKG7Ksk896r9buBw1waQpSgE82MY--d-d-Q",
+        "logo": "https://escribo.com/wp-content/uploads/2019/03/Logo-color.png",
         "name":"Escribo Inovação para o Aprendizado",
-        "employerPosition": "Mobile Developer",
+        "employerPosition": "Mobile and Back-end Developer",
         "position": "Trainee",
         "start":"02/01/2022",
         "end":"09/01/2022",
@@ -18,7 +18,7 @@
         ]
     },
     {
-        "logo": "https://media.licdn.com/dms/image/C4E0BAQG6bhUuH-Xt9w/company-logo_100_100/0/1535333653721?e=1701302400&v=beta&t=3CWiNeNYRv5GLuLNElaq7u-d0nBmrA82t8yPANJ5Phg",
+        "logo": "https://lh5.googleusercontent.com/p/AF1QipNt_egx2i4lRbk0SIT39Fv6nLMnkztL8jSo1Fga=w160-h160-k-no",
         "name":"Tokenlab",
         "employerPosition": "Estagiário Web Developer",
         "position": "Estagiário",
@@ -34,12 +34,37 @@
             "Desenvolvimento full stack",
             "Desenvolvimento de front-end",
             "Desenvolvimento web",
-            "GiTypeScript",
+            "TypeScript",
             "Bootstrap",
             "JavaScript",
             "HTML",
             "Node.js",
             "Scss and Css"
+        ]
+    },
+  {
+        "logo": "data:image/jpeg;base64,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",
+        "name":"Maximo Web Solucoes Para Internet",
+        "employerPosition": "Web Fullstack Developer",
+        "position": "Desenvolvedor",
+        "start":"17/09/2023",
+        "end":"",
+        "modeWork":"Remote",
+        "local":"São Paulo, São Paulo, Brasil",
+        "description":"Como desenvolvedor na MaximoWeb, construo, documento e apresento sistemas webs para os clientes contratante.</br>Utilizo de linguagens voltadas para a área Web como Javascript e PHP para desenvolver o código dos projetos e Bancos de dados relacionais para armazenamento de dados.</br>Venho aprendendo muito sobre segurança enquanto atuo nesses projetos e também me desenvolvendo nos estudos de outras tecnologias para possíveis implementações que contribuirão para a melhora dos projetos.",
+        "skills": [
+            "Metodologias Agile",
+            "PHP",
+            "Git",
+            "Desenvolvimento full stack",
+            "Desenvolvimento de front-end",
+            "Desenvolvimento web",
+            "JavaScript",
+            "jQuery",
+            "HTML",
+            "Scss and Css",
+            "Banco de Dados Relacionais",
+            "AWS"
         ]
     }
 ]
