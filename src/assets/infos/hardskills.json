@@ -77,9 +77,21 @@
         "name": "AWS",
         "learning": true,
         "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsdJVfYrvhJapkIqegem2KLEuLFPd0hzengg&s"
-    }{
+    },{
         "name": "DevOps",
         "learning": true,
         "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuTaGRP-CqGCzsvVbj_nEbRl0_bqytG6utXA&s"
+    },{
+        "name": "Análise de Dados Preditiva e Descritiva",
+        "learning": true,
+        "logo": "https://cdn-icons-png.flaticon.com/512/2082/2082160.png"
+    },{
+        "name": "SSAS",
+        "learning": true,
+        "logo": "https://aiit-india.in/wp-content/uploads/2023/08/png-clipart-microsoft-sql-server-computer-servers-database-microsoft-angle-text-thumbnail-263x263.png"
+    },{
+        "name": "Power BI",
+        "learning": true,
+        "logo": "https://images.datacamp.com/image/upload/v1714478776/re388xshtgihucfiiavf.png"
     }
 ]
